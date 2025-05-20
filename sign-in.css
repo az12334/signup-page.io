@@ -1,0 +1,180 @@
+body{
+    color:white;
+    justify-content: center;
+    background:linear-gradient(135deg, #0a412b,#155e83,#acadb1,#0b581e,#3b88d1);
+    background-size:300% 300% ;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: shine 10s ease-in-out infinite;
+
+}
+/* body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+} */
+@keyframes shine{
+    0%{
+        background-position: 0% 50%; 
+    
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50% ;
+    }
+}
+
+.h-one{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5px; 
+    animation: slideRightToLeft 6s linear infinite;
+
+}
+@keyframes slideRightToLeft{
+    50%{
+        transform: translateX(20%);
+  
+     }
+     0%{
+        transform: translateY(0%);
+     }
+}
+hr{
+    background-color:white;
+    border: none;
+    height: 2px;
+}
+.div-conte{
+    width: 400px;
+    height: 470px;
+    background-color:transparent;
+    display: block;
+    margin-top: 100px;
+    box-shadow: 10px 0px 35px rgb(0,0,0,0.5);
+    border: none;
+    border-radius: 20px;
+    margin-left:450px;
+    padding: 10px;
+}
+button{
+    background-color: #0a412b;
+    color:white;
+    font-size: 13px;
+    padding:9px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transform: translate(1.1);
+    transition: 0.5s ease-in-out;
+    margin-left: 150px;
+    border-radius: 10px;
+    text-align: center;
+   align-items: center;
+
+}
+button:hover{
+    background-color: #1877F2;
+    color: white;
+    transition: 0.4s ease-out;
+}
+.btn-one a{
+    text-decoration: none;
+    color: white;
+}
+label{
+    display: flex;
+    font-size:16px;
+    font-weight: 400;
+    margin-left:8px;
+}
+input[type="Username"],input[type="Password"]{
+    width: 90%;
+    padding:10px;
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 5px 6px rgb(0,0,0,0.9);
+    justify-content: flex-start;
+    box-sizing: border-box;
+    color:black;
+}
+::placeholder{
+    color: rgb(1, 104, 117);
+    border: none;
+}
+.bx{
+    font-size: 16px;
+    color: white;
+}
+p a{
+    color: white;
+    text-decoration: none;
+
+}
+.instagram i{
+    font-size:20px;
+    text-decoration: none;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    transition:transform 0.3s ease-in-out ,color 0.3s ease;
+    color: #E1306C;
+}
+.social-media a{
+    text-decoration: none;
+}
+.facebook i{
+    font-size:20px;
+    text-decoration: none;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    transition:transform 0.3s ease-in-out ,color 0.3s ease;
+    color: #1877F2;
+}
+.whatsapp i{
+    font-size:20px;
+    text-decoration: none;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    transition:transform 0.3s ease-in-out ,color 0.3s ease;
+    color:#25D366;
+}
+p{
+    display: inline;
+    color: white;
+}
+ .forget a{
+text-align: right;
+justify-content: right;
+display: block;
+
+
+}
+.social-media{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.another-page{
+    margin-top: 20px;
+}
+.here{
+    color: rgb(29, 63, 216);
+    text-decoration: underline;
+}
+#forget-password{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
